@@ -13,18 +13,14 @@ int n = Convert.ToInt32(Console.ReadLine());
 if (n > 0)
 {
     int count = 1;
-while (count <= n)
-{
-    if (count % 2 == 0)
+    while (count <= n)
     {
-        Console.Write($"{count} ");
-    count++;
-    }
-    else
-    {
+        if (count % 2 == 0)
+        {
+            Console.Write($"{count} ");
+        }
         count++;
     }
-}
 }
 else
 {
