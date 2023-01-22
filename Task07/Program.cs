@@ -10,17 +10,10 @@
 
 Console.Write("Введите трехзначное целое число:");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number > 99)
+if (number > 99 && number < 1000)
 {
-    if (number < 1000)
-    {
-        int lastDigit = number % 10;
-        Console.WriteLine($"{lastDigit}");
-    }
-    else
-    {
-        Console.WriteLine("Введено не соответствующее число!");
-    }
+    int lastDigit = number % 10;
+    Console.WriteLine($"{lastDigit}");
 }
 else
 {
