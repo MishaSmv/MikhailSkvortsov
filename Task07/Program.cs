@@ -14,8 +14,8 @@ if (number > 99)
 {
     if (number < 1000)
     {
-       int lastDigit = number % 10;
-    Console.WriteLine($"{lastDigit}"); 
+        int lastDigit = number % 10;
+        Console.WriteLine($"{lastDigit}");
     }
     else
     {
